@@ -1,0 +1,1154 @@
+/* =========================================
+   FAMILY PASS - WHITE + BLUE THEME
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+.family-page {
+  min-height: 100vh;
+  background: #f4f8fd;
+  color: #163f6b;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 40px;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.family-header {
+  min-height: 90px;
+  padding: 0 35px;
+
+  background: #ffffff;
+  border-bottom: 1px solid #dce8f5;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.family-header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.family-header-icon {
+  width: 46px;
+  height: 46px;
+
+  border-radius: 12px;
+
+  background: #eaf3ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 23px;
+}
+
+.family-header h1 {
+  margin: 0;
+
+  color: #123f70;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.family-header p {
+  margin: 5px 0 0;
+
+  color: #7b94ad;
+  font-size: 12px;
+}
+
+.family-user-icon {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  background: #176bd1;
+
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =========================================
+   TABS
+========================================= */
+
+.family-tabs {
+  margin: 22px 35px;
+
+  padding: 5px;
+
+  width: fit-content;
+
+  background: #ffffff;
+
+  border: 1px solid #dce8f5;
+
+  border-radius: 11px;
+
+  display: flex;
+  gap: 4px;
+
+  box-shadow: 0 3px 12px rgba(30, 80, 130, 0.04);
+}
+
+.family-tabs button {
+  border: none;
+
+  background: transparent;
+
+  color: #718ba5;
+
+  padding: 11px 22px;
+
+  border-radius: 8px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.family-tabs button:hover {
+  color: #176bd1;
+  background: #eef6ff;
+}
+
+.family-tabs button.tab-active {
+  background: #176bd1;
+
+  color: #ffffff;
+
+  box-shadow: 0 5px 12px rgba(23, 107, 209, 0.18);
+}
+
+
+/* =========================================
+   STEPS
+========================================= */
+
+.family-steps {
+  margin: 25px 35px;
+
+  display: flex;
+  align-items: center;
+}
+
+.family-step {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  color: #9aaec1;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.step-number {
+  width: 34px;
+  height: 34px;
+
+  border-radius: 50%;
+
+  background: #e8f0f8;
+
+  color: #7d94aa;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.family-step.step-active {
+  color: #176bd1;
+}
+
+.family-step.step-active .step-number {
+  background: #176bd1;
+  color: #ffffff;
+
+  box-shadow: 0 5px 12px rgba(23, 107, 209, 0.2);
+}
+
+.step-line {
+  width: 90px;
+  height: 2px;
+
+  margin: 0 14px;
+
+  background: #dce7f1;
+}
+
+
+/* =========================================
+   MAIN LAYOUT
+========================================= */
+
+.family-layout {
+  margin: 0 35px 40px;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 2fr)
+    minmax(300px, 0.85fr);
+
+  gap: 22px;
+}
+
+
+/* =========================================
+   FORM CARD
+========================================= */
+
+.family-form-card {
+  background: #ffffff;
+
+  border: 1px solid #dce8f5;
+
+  border-radius: 14px;
+
+  box-shadow: 0 5px 18px rgba(35, 85, 130, 0.05);
+
+  overflow: hidden;
+}
+
+.form-card-header {
+  padding: 22px 25px;
+
+  border-bottom: 1px solid #e3edf6;
+}
+
+.form-card-header h2 {
+  margin: 0 0 5px;
+
+  color: #123f70;
+
+  font-size: 17px;
+}
+
+.form-card-header p {
+  margin: 0;
+
+  color: #8097ad;
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+   FORM GRID
+========================================= */
+
+.family-form-grid {
+  padding: 25px;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 19px;
+}
+
+.family-field {
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.family-field label {
+  color: #597691;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.5px;
+}
+
+.family-field input,
+.family-field select {
+  width: 100%;
+
+  height: 44px;
+
+  padding: 0 13px;
+
+  border: 1px solid #d5e3f0;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #204e7a;
+
+  font-size: 12px;
+
+  outline: none;
+
+  transition: 0.2s;
+}
+
+.family-field input:focus,
+.family-field select:focus {
+  border-color: #176bd1;
+
+  box-shadow:
+    0 0 0 3px rgba(23, 107, 209, 0.08);
+}
+
+.family-field input::placeholder {
+  color: #a0b1c0;
+}
+
+.family-field input[readonly] {
+  background: #f5f8fb;
+
+  color: #7890a7;
+}
+
+.field-full {
+  grid-column: 1 / -1;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.form-button-area {
+  padding: 0 25px 25px;
+}
+
+.family-primary-btn {
+  min-height: 44px;
+
+  padding: 0 22px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #176bd1;
+
+  color: #ffffff;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 5px 13px rgba(23, 107, 209, 0.16);
+
+  transition: 0.2s;
+}
+
+.family-primary-btn:hover {
+  background: #0f5dbd;
+}
+
+.form-button-row {
+  padding: 0 25px 25px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 12px;
+}
+
+.family-back-btn {
+  min-height: 44px;
+
+  padding: 0 20px;
+
+  border: 1px solid #d4e2ef;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #65819c;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.family-back-btn:hover {
+  background: #f1f7fd;
+
+  color: #176bd1;
+}
+
+.family-submit-btn {
+  min-height: 44px;
+
+  padding: 0 22px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #0aaa78;
+
+  color: white;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.family-submit-btn:hover {
+  background: #078f65;
+}
+
+
+/* =========================================
+   MEMBER FORM
+========================================= */
+
+.member-form {
+  padding: 25px;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+}
+
+
+/* =========================================
+   RIGHT SIDE
+========================================= */
+
+.family-right-column {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+.family-side-card {
+  background: #ffffff;
+
+  border: 1px solid #dce8f5;
+
+  border-radius: 14px;
+
+  padding: 20px;
+
+  box-shadow: 0 5px 18px rgba(35, 85, 130, 0.05);
+}
+
+.side-card-title {
+  padding-bottom: 14px;
+
+  border-bottom: 1px solid #e5edf5;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.side-card-title h2 {
+  margin: 0;
+
+  color: #123f70;
+
+  font-size: 15px;
+}
+
+.side-card-title span {
+  color: #0aaa78;
+
+  background: #e8faf4;
+
+  padding: 5px 9px;
+
+  border-radius: 15px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================
+   ACTIVE PASS
+========================================= */
+
+.active-pass {
+  padding: 16px 0;
+
+  border-bottom: 1px solid #edf2f7;
+
+  position: relative;
+}
+
+.active-pass:last-of-type {
+  border-bottom: none;
+}
+
+.active-pass h3 {
+  margin: 0 0 4px;
+
+  color: #174d7d;
+
+  font-size: 13px;
+}
+
+.active-pass p {
+  margin: 0;
+
+  color: #8197ad;
+
+  font-size: 11px;
+}
+
+.active-pass small {
+  display: block;
+
+  margin-top: 11px;
+
+  color: #8096ab;
+
+  font-size: 10px;
+
+  line-height: 1.8;
+}
+
+.active-pass small strong {
+  color: #174d7d;
+}
+
+.active-pass > .active-badge {
+  position: absolute;
+
+  top: 16px;
+  right: 0;
+}
+
+
+/* =========================================
+   STATUS BADGES
+========================================= */
+
+.active-badge,
+.pending-badge {
+  display: inline-block;
+
+  padding: 5px 9px;
+
+  border-radius: 15px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+.active-badge {
+  background: #e8faf4;
+
+  color: #08a875;
+
+  border: 1px solid #bcebd9;
+}
+
+.pending-badge {
+  background: #fff7df;
+
+  color: #d59400;
+
+  border: 1px solid #f1df9e;
+}
+
+
+/* =========================================
+   RENEWAL
+========================================= */
+
+.renewal-card {
+  margin-top: 15px;
+
+  padding: 13px;
+
+  border-radius: 9px;
+
+  background: #fff9e8;
+
+  border: 1px solid #f0dfaa;
+
+  position: relative;
+}
+
+.renewal-card h3 {
+  margin: 0 0 4px;
+
+  color: #956f00;
+
+  font-size: 12px;
+}
+
+.renewal-card p {
+  margin: 0;
+
+  color: #9a8963;
+
+  font-size: 10px;
+}
+
+.renewal-card span {
+  position: absolute;
+
+  right: 13px;
+  top: 13px;
+
+  color: #d29300;
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+.renewal-card small {
+  display: block;
+
+  margin-top: 9px;
+
+  color: #a28f69;
+
+  font-size: 9px;
+}
+
+
+/* =========================================
+   ELIGIBILITY
+========================================= */
+
+.eligibility-row {
+  padding: 12px 0;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  border-bottom: 1px solid #edf2f7;
+}
+
+.eligibility-row:last-child {
+  border-bottom: none;
+}
+
+.eligibility-row > span {
+  width: 20px;
+  height: 20px;
+
+  border-radius: 50%;
+
+  background: #e8faf4;
+
+  color: #08a875;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 10px;
+}
+
+.eligibility-row p {
+  margin: 2px 0 0;
+
+  color: #7891a8;
+
+  font-size: 11px;
+}
+
+.eligibility-row strong {
+  color: #174d7d;
+}
+
+
+/* =========================================
+   REVIEW
+========================================= */
+
+.review-container {
+  padding: 25px;
+}
+
+.review-section {
+  padding: 16px;
+
+  margin-bottom: 14px;
+
+  background: #f7faff;
+
+  border: 1px solid #dce8f5;
+
+  border-radius: 9px;
+}
+
+.review-section h3 {
+  margin: 0 0 12px;
+
+  color: #176bd1;
+
+  font-size: 13px;
+}
+
+.review-row {
+  padding: 8px 0;
+
+  border-bottom: 1px solid #e5edf5;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.review-row:last-child {
+  border-bottom: none;
+}
+
+.review-row span {
+  color: #7b92a8;
+
+  font-size: 11px;
+}
+
+.review-row strong {
+  color: #174d7d;
+
+  font-size: 11px;
+}
+
+
+/* =========================================
+   DIGITAL PASS
+========================================= */
+
+.digital-page {
+  margin: 0 35px 40px;
+}
+
+.digital-description {
+  margin: 0 0 17px;
+
+  color: #7891a8;
+
+  font-size: 12px;
+}
+
+.digital-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 2fr)
+    minmax(300px, 0.85fr);
+
+  gap: 22px;
+}
+
+
+/* PASS CARD */
+
+.digital-pass-card {
+  overflow: hidden;
+
+  border: 1px solid #cbddeb;
+
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  color: #183f62;
+
+  box-shadow: 0 6px 18px rgba(35, 85, 130, 0.06);
+}
+
+.pass-top {
+  min-height: 68px;
+
+  padding: 13px 20px;
+
+  background: linear-gradient(
+    135deg,
+    #1769a4,
+    #2d83bb
+  );
+
+  color: white;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.pass-top strong {
+  display: block;
+
+  font-size: 13px;
+}
+
+.pass-top small {
+  display: block;
+
+  margin-top: 4px;
+
+  font-size: 9px;
+}
+
+.pass-number {
+  text-align: right;
+}
+
+.pass-number small {
+  margin: 0;
+
+  font-size: 9px;
+}
+
+.pass-number strong {
+  font-size: 19px;
+
+  letter-spacing: 2px;
+}
+
+
+/* PASS TABLE */
+
+.pass-table {
+  display: grid;
+
+  grid-template-columns:
+    22% 28%
+    22% 28%;
+}
+
+.pass-label {
+  padding: 9px 10px;
+
+  background: #eaf4fc;
+
+  border-right: 1px solid #c9dce9;
+
+  border-bottom: 1px solid #c9dce9;
+
+  color: #28597f;
+
+  font-size: 9px;
+}
+
+.pass-value {
+  padding: 9px 10px;
+
+  border-bottom: 1px solid #c9dce9;
+
+  color: #315775;
+
+  font-size: 10px;
+}
+
+.red-text {
+  color: #df4439 !important;
+}
+
+.green-text {
+  color: #08a875 !important;
+}
+
+.pass-footer {
+  padding: 8px;
+
+  background: #205282;
+
+  color: white;
+
+  text-align: center;
+
+  font-size: 9px;
+}
+
+.print-pass-btn {
+  width: 100%;
+
+  height: 45px;
+
+  margin-top: 18px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #176bd1;
+
+  color: white;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.print-pass-btn:hover {
+  background: #0f5dbd;
+}
+
+
+/* =========================================
+   PASS INFO
+========================================= */
+
+.info-row {
+  padding: 13px 0;
+
+  border-bottom: 1px solid #edf2f7;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.info-row span {
+  color: #7891a8;
+
+  font-size: 11px;
+}
+
+.info-row strong {
+  color: #174d7d;
+
+  font-size: 11px;
+
+  text-align: right;
+}
+
+
+/* IMPORTANT NOTE */
+
+.important-card {
+  background: #ffffff;
+}
+
+.important-card p {
+  margin: 11px 0;
+
+  color: #718ba3;
+
+  font-size: 10px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   STATUS PAGE
+========================================= */
+
+.status-page {
+  margin: 25px 35px 45px;
+}
+
+.status-table-card {
+  background: #ffffff;
+
+  border: 1px solid #dce8f5;
+
+  border-radius: 14px;
+
+  overflow: hidden;
+
+  box-shadow: 0 5px 18px rgba(35, 85, 130, 0.05);
+}
+
+.status-table-header {
+  padding: 20px 24px;
+
+  border-bottom: 1px solid #e3edf6;
+}
+
+.status-table-header h2 {
+  margin: 0;
+
+  color: #123f70;
+
+  font-size: 17px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+
+  min-width: 900px;
+
+  border-collapse: collapse;
+}
+
+thead {
+  background: #f5f9fd;
+}
+
+th {
+  padding: 13px 15px;
+
+  text-align: left;
+
+  color: #718aa3;
+
+  font-size: 10px;
+
+  letter-spacing: 0.5px;
+}
+
+td {
+  padding: 15px;
+
+  border-top: 1px solid #edf2f7;
+
+  color: #5d7892;
+
+  font-size: 11px;
+
+  white-space: nowrap;
+}
+
+td:first-child {
+  color: #174d7d;
+
+  font-weight: 700;
+}
+
+tbody tr:hover {
+  background: #f7fbff;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+  .family-layout,
+  .digital-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 750px) {
+
+  .family-header {
+    padding: 0 15px;
+  }
+
+  .family-header h1 {
+    font-size: 21px;
+  }
+
+  .family-header p {
+    display: none;
+  }
+
+  .family-tabs {
+    margin: 18px 15px;
+
+    max-width: calc(100% - 30px);
+
+    overflow-x: auto;
+  }
+
+  .family-tabs button {
+    white-space: nowrap;
+  }
+
+  .family-steps {
+    margin: 20px 15px;
+
+    overflow-x: auto;
+
+    padding-bottom: 5px;
+  }
+
+  .step-line {
+    width: 40px;
+  }
+
+  .family-layout,
+  .digital-page,
+  .status-page {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .family-form-grid,
+  .member-form {
+    grid-template-columns: 1fr;
+  }
+
+  .field-full {
+    grid-column: auto;
+  }
+
+  .form-button-row {
+    flex-direction: column;
+  }
+
+  .family-primary-btn,
+  .family-submit-btn,
+  .family-back-btn {
+    width: 100%;
+  }
+
+  .pass-table {
+    grid-template-columns:
+      25% 25%
+      25% 25%;
+  }
+
+  .pass-label,
+  .pass-value {
+    padding: 7px;
+
+    font-size: 8px;
+  }
+}

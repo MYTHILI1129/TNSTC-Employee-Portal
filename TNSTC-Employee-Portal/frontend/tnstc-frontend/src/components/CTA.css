@@ -1,0 +1,194 @@
+.cta {
+  background: #0d5ea8;
+  padding: 75px 8%;
+}
+
+.cta-container {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+
+  gap: 70px;
+  align-items: center;
+}
+
+/* LEFT */
+
+.cta-label {
+  margin: 0 0 14px;
+
+  color: #cfe5f8;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.cta-content h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+.cta-content h2 span {
+  color: #dceeff;
+}
+
+.cta-description {
+  max-width: 650px;
+
+  margin: 20px 0 30px;
+
+  color: #e3f0fa;
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* BUTTONS */
+
+.cta-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.cta-login-btn,
+.cta-services-btn {
+  padding: 14px 25px;
+
+  border-radius: 7px;
+
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.cta-login-btn {
+  background: #ffffff;
+  color: #0d5ea8;
+}
+
+.cta-login-btn:hover {
+  background: #f1f5f9;
+}
+
+.cta-services-btn {
+  color: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.cta-services-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* RIGHT */
+
+.cta-side {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.cta-box {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 18px;
+
+  padding: 22px;
+
+  background: rgba(255, 255, 255, 0.10);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  border-radius: 10px;
+}
+
+.cta-icon {
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+  color: #0d5ea8;
+
+  border-radius: 8px;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.cta-box h3 {
+  margin: 0 0 6px;
+
+  color: #ffffff;
+
+  font-size: 17px;
+}
+
+.cta-box p {
+  margin: 0;
+
+  color: #d8e8f5;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+
+  .cta-container {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+  .cta-content {
+    text-align: center;
+  }
+
+  .cta-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cta-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .cta {
+    padding: 60px 5%;
+  }
+
+  .cta-content h2 {
+    font-size: 32px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-login-btn,
+  .cta-services-btn {
+    width: 210px;
+    text-align: center;
+  }
+}

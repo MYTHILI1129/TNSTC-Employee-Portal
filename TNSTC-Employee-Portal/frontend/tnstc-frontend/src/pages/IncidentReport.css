@@ -1,0 +1,451 @@
+.incident-page {
+  min-height: 100vh;
+  background: #f4f8fd;
+  color: #123d6b;
+  font-family: Arial, sans-serif;
+}
+
+
+/* HEADER */
+
+.incident-header {
+  min-height: 105px;
+  background: #ffffff;
+  border-bottom: 1px solid #dbe7f3;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 46px;
+}
+
+.incident-title-area {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.incident-icon {
+  width: 52px;
+  height: 52px;
+
+  background: #eaf3ff;
+  border-radius: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 27px;
+}
+
+.incident-title-area h1 {
+  margin: 0;
+  font-size: 31px;
+  color: #123f70;
+}
+
+.incident-title-area p {
+  margin: 7px 0 0;
+  color: #6d8aa8;
+  font-size: 15px;
+}
+
+.incident-profile {
+  width: 46px;
+  height: 46px;
+
+  border-radius: 50%;
+  background: #1670d8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 23px;
+}
+
+
+/* MAIN */
+
+.incident-content {
+  padding: 32px 48px 60px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+
+/* INFO CARD */
+
+.incident-info-card {
+  background: #ffffff;
+  border: 1px solid #d9e7f5;
+  border-radius: 16px;
+
+  padding: 24px 28px;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  margin-bottom: 24px;
+}
+
+.info-icon {
+  width: 55px;
+  height: 55px;
+
+  background: #fff5dc;
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 25px;
+}
+
+.incident-info-card h2 {
+  margin: 0;
+  font-size: 21px;
+  color: #123f70;
+}
+
+.incident-info-card p {
+  margin: 7px 0 0;
+  color: #7691ac;
+  font-size: 14px;
+}
+
+.required-note {
+  margin-left: auto;
+  color: #e74c3c;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+/* FORM CARD */
+
+.incident-form-card {
+  background: #ffffff;
+  border: 1px solid #d9e7f5;
+  border-radius: 17px;
+
+  padding: 30px 34px;
+}
+
+.form-section-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.form-section-title > span {
+  width: 45px;
+  height: 45px;
+
+  background: #edf5ff;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 21px;
+}
+
+.form-section-title h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #123f70;
+}
+
+.form-section-title p {
+  margin: 5px 0 0;
+  color: #7894b0;
+  font-size: 14px;
+}
+
+.form-divider {
+  height: 1px;
+  background: #e2ebf4;
+  margin: 25px 0;
+}
+
+
+/* FORM */
+
+.incident-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+
+  margin-bottom: 22px;
+}
+
+.incident-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.incident-form-group.full-width {
+  margin-bottom: 22px;
+}
+
+.incident-form-group label {
+  font-size: 13px;
+  font-weight: 700;
+
+  color: #426788;
+
+  margin-bottom: 9px;
+}
+
+.incident-form-group label span {
+  color: #e74c3c;
+}
+
+.incident-form-group input,
+.incident-form-group select,
+.incident-form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+
+  border: 1px solid #d4e2ef;
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  padding: 13px 14px;
+
+  font-size: 14px;
+  color: #254f76;
+
+  outline: none;
+
+  transition: 0.2s;
+}
+
+.incident-form-group input,
+.incident-form-group select {
+  height: 48px;
+}
+
+.incident-form-group textarea {
+  resize: vertical;
+  min-height: 130px;
+  line-height: 1.5;
+}
+
+.incident-form-group input:focus,
+.incident-form-group select:focus,
+.incident-form-group textarea:focus {
+  border-color: #1976d2;
+  box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.08);
+}
+
+.incident-form-group input::placeholder,
+.incident-form-group textarea::placeholder {
+  color: #9ab0c4;
+}
+
+
+/* NOTICE */
+
+.incident-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+
+  background: #f0f7ff;
+  border: 1px solid #d3e7fb;
+  border-radius: 10px;
+
+  padding: 16px 18px;
+
+  margin-top: 8px;
+}
+
+.notice-icon {
+  font-size: 20px;
+}
+
+.incident-notice strong {
+  color: #195b92;
+  font-size: 14px;
+}
+
+.incident-notice p {
+  margin: 5px 0 0;
+  color: #6f8da8;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* BUTTONS */
+
+.incident-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+
+  margin-top: 28px;
+}
+
+.incident-cancel,
+.incident-submit {
+  border: none;
+  border-radius: 9px;
+
+  height: 48px;
+
+  padding: 0 25px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.incident-cancel {
+  background: #ffffff;
+  color: #46708f;
+  border: 1px solid #d3e1ed;
+}
+
+.incident-cancel:hover {
+  background: #f5f8fb;
+}
+
+.incident-submit {
+  background: #1976d2;
+  color: #ffffff;
+
+  box-shadow: 0 5px 14px rgba(25, 118, 210, 0.2);
+}
+
+.incident-submit:hover {
+  background: #1267bd;
+}
+
+
+/* BOTTOM */
+
+.incident-bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+
+  margin-top: 24px;
+}
+
+.incident-small-card {
+  background: #ffffff;
+  border: 1px solid #d9e7f5;
+  border-radius: 15px;
+
+  padding: 22px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.small-card-icon {
+  width: 46px;
+  height: 46px;
+
+  background: #edf5ff;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 21px;
+}
+
+.incident-small-card h3 {
+  margin: 0;
+  color: #123f70;
+  font-size: 16px;
+}
+
+.incident-small-card p {
+  margin: 6px 0 0;
+  color: #7894b0;
+  font-size: 13px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+  .incident-header {
+    padding: 0 20px;
+  }
+
+  .incident-content {
+    padding: 25px 20px 45px;
+  }
+
+  .incident-form-row {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .incident-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .required-note {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .incident-title-area h1 {
+    font-size: 24px;
+  }
+
+  .incident-title-area p {
+    font-size: 12px;
+  }
+
+  .incident-profile {
+    width: 40px;
+    height: 40px;
+  }
+
+  .incident-form-card {
+    padding: 22px 18px;
+  }
+
+  .incident-info-card {
+    padding: 20px;
+  }
+
+  .incident-actions {
+    flex-direction: column;
+  }
+
+  .incident-cancel,
+  .incident-submit {
+    width: 100%;
+  }
+  .field-error{
+  color:#e53935;
+  font-size:13px;
+  margin-top:6px;
+  font-weight:500;
+}
+
+.incident-form-group input,
+.incident-form-group select,
+.incident-form-group textarea{
+  width:100%;
+}
+}

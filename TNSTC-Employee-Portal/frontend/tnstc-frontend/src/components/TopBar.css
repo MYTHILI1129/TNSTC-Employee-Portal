@@ -1,0 +1,35 @@
+.topbar{
+    background:#0b4f8a;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:8px 60px;
+    font-size:14px;
+}
+
+.topbar-left,
+.topbar-right{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.topbar a{
+    color:white;
+    text-decoration:none;
+}
+
+.topbar a:hover{
+    text-decoration:underline;
+}
+
+@media(max-width:768px){
+
+.topbar{
+    flex-direction:column;
+    gap:10px;
+    padding:10px;
+}
+
+}
